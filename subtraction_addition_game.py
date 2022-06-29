@@ -4,7 +4,7 @@ import random, sys, pyttsx3
 
 def main():
     # Main game loop:
-    print("Hello subtraction_addition_game!")
+    print("Hello in subtraction_addition_game!")
     while True:
         # Ask the user if he/she wants to play:
         while True:
