@@ -34,13 +34,9 @@ def main():
 def subtraction():
     '''Doesn't take input. Create "subtraction game" -
     Creates 20 subtraction equation. User has 3 tries for each equation.
-    This funciton uses pyttsx3 module to output voice warrnig.
     Program has 2 mode : easy and hard.
     In easy mode function performs subtraction from 0-50, in hard mode performs subtraction from 0-100. '''
-    # Initialize pyttsx3 module
-    engine = pyttsx3.init()
-    # Reduce rate of speach
-    engine.setProperty("rate", rate-50)
+   
     counter = 1 # number of question
     number_of_question = 20 # variable for amount of question
     correct_answer = 0 # variable for amount of correct_answer
@@ -71,13 +67,11 @@ def subtraction():
                 # Check correct answer:
                 if equation == inp:
                     print("Correct!")
-                    engine.say("Correct")
                     correct_answer += 1
                     break
                 # Output for incorrect answer:
                 else:
                     print("Incorrect!")
-                    engine.say("Incorrect")
             except:
                 print("Incorrect input")
 
@@ -87,12 +81,8 @@ def subtraction():
 
 def addition():
     '''Doesn't take input. Create "addition game" -
-    Creates 20 additon equation. User has 3 tries for each equation.
-    This funciton uses pyttsx3 module to output voice warrnig. '''
-    # Initialize pyttsx3 module
-    engine = pyttsx3.init()
-    # Reduce rate of speach
-    engine.setProperty("rate", rate-50)
+    Creates 20 additon equation. User has 3 tries for each equation. '''
+  
     counter = 1 # number of question
     number_of_question = 20 # variable for amount of question
     correct_answer = 0 # variable for amount of correct_answer
@@ -112,13 +102,11 @@ def addition():
                 # Check correct answer:
                 if equation == inp:
                     print("Correct!")
-                    engine.say("Correct")
                     correct_answer += 1
                     break
                 # Output for incorrect answer:
                 else:
                     print("Incorrect!")
-                    engine.say("Incorrect")
             except:
                 print("Incorrect input")
         counter += 1
