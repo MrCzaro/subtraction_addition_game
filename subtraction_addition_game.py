@@ -1,5 +1,5 @@
 #! Python3
-import random, sys, pyttsx3
+import random, sys
 
 
 def main():
@@ -8,7 +8,7 @@ def main():
     while True:
         # Ask the user if he/she wants to play:
         while True:
-            response = input("Would you like to play?. Please type in Yes/No.").lower()
+            response = input("Would you like to play?. Please type in Yes/No: ").lower()
             if response.startswith("y"):
                 break
             elif response.startswith("n"):
@@ -16,7 +16,7 @@ def main():
         # Ask the user for game mode(additon/subtraction):
         while True:
             print("Would you like to do some addition or substraction exercise?")
-            response = input("Please type (+) for addition or (-) for substraction")
+            response = input("Please type (+) for addition or (-) for substraction: ")
             if response == "+":
                 addition()
             elif response == "-":
@@ -24,7 +24,7 @@ def main():
             # Ask user if he/she wants play again:
             print("Would you like play again?")
             while True:
-                response = input("Please type in Yes/No").lower()
+                response = input("Please type in Yes/No: ").lower()
                 if response.startswith("y"):
                     break
                 elif response.startswith("n"):
